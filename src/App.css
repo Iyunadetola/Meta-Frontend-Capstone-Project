@@ -1,38 +1,445 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header a .logo{
+  width: 3em;
+  margin-left: 1rem;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  background-color: rgb(248, 247, 254);
+  color: white;
+  
+}
+.navHeaderContainer{
+  display: flex;
+  align-items: center;
+}
+
+nav ul li{
+  margin: 0 3rem; 
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+header button{
+  padding: 5px;
+  border: none;
+  outline: none;
+  visibility: none;
+  opacity: 0;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+header nav ul li .link{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.headerdiv{
+ background-color: rgb(69, 93, 34);
+ position: relative;
+ height: 20em;
+ padding: 5em;
+  
+}
+.headerdiv p{
+  padding: 10px 0px 10px 0px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+.headerdiv h1{
+  color: rgb(255, 255, 0);
+  font-weight: bolder;
+  font-size: 3em;
+}
+.headerdiv h2{
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.headerdiv .headerimg{
+  position: absolute;
+  left: 53em;
+  bottom: -3em;
+}
+.headerdiv .headerimg img{
+  width: 20em;
+  height: 20em;
+  border-radius: 1em;
+}
+.headerdiv button{
+  width: 9em;
+  height: 3em;
+  border-radius: 2em;
+  border: none;
+  background-color: rgb(255, 255, 0);
+}
+.headerdiv button .btn-link{
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+
+}
+.headerdiv button:hover{
+  background-color: rgb(69, 93, 34) ;
+  border: 1px solid rgb(255, 255, 0);
+}
+.headerdiv button:hover .btn-link:hover{
+  color: #fff;
+}
+
+.headerMobile{
+  display: none;
+}
+/* .link:hover{
+  border: 1px solid black;
+  background-color: rgb(255, 255, 0);
+  border: none;
+  height: 20px;
+} */
+header nav ul li:hover{
+  border: 1px solid black;
+  height: 60px;
+  background-color: rgb(255, 255, 0);
+  border: none;
+}
+
+.carddiv{
+  background-color: rgb(238, 227, 227);
+  /* width: 80%; */
+  height: 30em;
+  margin: 2em;
+
+}
+.carddiv img{
+  width: 100%
+}
+.imgprice{
+  display: flex;
+  padding: 0em 1em 0em 1em;
+  justify-content: space-between;
+  font-size: 1.6em;
+}
+.carddiv p{
+  padding: 1em;
+  text-align: justify;
+}
+.cardMenuHeading{
+  display: flex;
+  justify-content: space-between;
+}
+.cardContainer{
+  margin: 6em;
+}
+
+.cardContainer .cardMenuHeading .btnDiv button{
+  width: 9em;
+  height: 3em;
+  border-radius: 2em;
+  border: none;
+  background-color: rgb(255, 255, 0);
+}
+.cardContainer .cardMenuHeading .btnDiv button .card-btn{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.cardContainer .cardMenuHeading .btnDiv button:hover{
+  background-color: rgb(69, 93, 34) ;
+  border: 1px solid rgb(255, 255, 0);
+}
+.cardContainer .cardMenuHeading .btnDiv button .card-btn:hover{
+  color: #fff;
+}
+
+.componentDiv{
+  padding-top: 2em;
+  display: grid;
+  /* justify-content: space-around; */
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.carddiv .orderDiv{
+  padding: 1em;
+}
+.carddiv .orderDiv .cardOrderLink{
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+.peopleSayCard .starImg{
+  width: 3em;
+}
+.peopleSayCard .customer{
+  width: 8em;
+  border-radius: 50%;
+}
+.peopleSayCard .name{
+  font-weight: bold;
+}
+.peopleSayComponent{
+  display: flex; 
+  justify-content: space-around;
+}
+.peopleSayCards{
+  background-color: rgb(69, 93, 34);
+}
+.peopleSayCards h2{
+  color: #fff;
+  padding: 2em;
+}
+.peopleSayCard{
+  border: 1px solid black;
+  background-color: #fff;
+  height: 25em;
+  border-radius: 1em;
+  border: none;
+  text-align: center;
+  padding-top: 2em;
+}
+.componentDivPeopleSay{
+  padding: 1em;
+}
+.mainContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 5em;
+}
+.mainText{
+  width: 100%;
+}
+.mainText h1{
+  padding-top: 1em;
+  color: rgb(248, 248, 69);
+  font-weight: 800;
+  font-size: 2.5em;
+}
+.mainText h2{
+  font-size: 2em;
+}
+.mainText p{
+  padding-top: 2em;
+}
+
+.mainImg .mainChef1, .mainChef2{
+  border-radius: 5%;
+  width: 70%;
+  margin-left: 1em;
+}
+.footer{
+  background-color: rgb(69, 93, 34);;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: #fff;
+}
+.footer .footerLogo img{
+  width: 6em;
+
+  /* padding-left: 5em; */
+}
+.footerLink{
+  line-height: 2;
+}
+.footerHome{
+  text-decoration: none;
+  color: #fff;
+}
+.footerContactImg{
+  width: 1em;
+}
+.footerContactdiv{
+  display: flex;
+}
+.footerContactdiv p{
+  margin-left: 14px;
+}
+.location{
+  padding-top: 1em;
+}
+.footerSocials{
+  color: #fff;
+  padding-right: 15px;
+  /* padding-top: 3em; */
+}
+.footerLinksDiv{
+  padding-top: 1em;
+}
+.footerDivLink h3, .footerContactUs h3, .footerConnect h3{
+  margin-top: 2em;
+}
+.footerLogo .footerlogo {
+  margin-top: 2em;
+  margin-left: 2em;
+}
+.reservationheader{
+  border: 1px solid black;
+  background-color:rgb(69, 93, 34) ;
+  height: 5em;
+  color: #fff;
   text-align: center;
 }
+.reservationheader h2{
+  padding-top: 1em;
+}
+label input{
+  width: 15em;
+  height: 2em;
+  margin: 2em;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.reservationTime{
+  width: 15em;
+  height: 2em;
+  margin: 2em;
+}
+.reservation button{
+  width: 18em;
+  height: 3em;
+  border-radius: 2em;
+  border: none;
+  background-color: rgb(255, 255, 0);
+}
+.reservation{
+  margin-left: 40%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.reservationConfirmationDiv{
+  text-align: center;
+  color:rgb(69, 93, 34) ;
+  padding: 3em 0 10em 0;
+}
+.reservationConfirmationDiv h3{
+  font-size: larger;
+}
+.reservationConfirmationDiv p{
+  font-size: small;
+  padding-top: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.reservationTick{
+  color:rgb(69, 93, 34) ;
+}
+.footerLink .footerHome:hover{
+  color: rgb(246, 246, 4);
+}
+.reservationTick{
+  font-size: 4em;
+}
+.About, .menu, .login, .orderOnline{
+  padding: 3em 0em 16em 3em;
+}
+
+
+@media only screen  and (max-width: 480px){
+  header button{
+    visibility: visible;
+    opacity: 1;
   }
-}
+  header nav{
+    position: fixed;
+    top: 0;
+    left: 5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-color: rgb(9, 75, 75);
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+  header .responsive-nav{
+    transform: none;
+  }
+  nav .nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  nav ul{
+    display: block;
+    line-height: 4;
+  }
+  .headerdiv{
+    display: none;
+  }
+  .headerMobile{
+    display: block;
+    background-color: rgb(69, 93, 34);
+    height: 20em;
+    padding: 5em;
+      
+  }
+  .headerMobile p{
+    padding: 10px 0px 10px 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
+  .headerMobile h1{
+    color: rgb(255, 255, 0);
+    font-weight: bolder;
+    font-size: 3em;
+  }
+  .headerMobile h2{
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: bolder;
+  }
+  /* .headerMobile .headerMobileImg img{
+    border-radius: 1em;
+    padding-top: 2em;
+    height: 20em;
+    width: 80%;
+  } */
+  /* .headerMobile .headerMobileImg{
+    width: 100%;
+  } */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .headerMobile button{
+    width: 9em;
+    height: 3em;
+    border-radius: 2em;
+    border: none;
+    background-color: rgb(255, 255, 0);
+  }
+  .headerMobile button .btn-link{
+    text-decoration: none;
+  }
+.componentDiv{
+  display: block;
+}
+.carddiv{
+  width: 100%;
+  padding: 0;
+}
+.peopleSayComponent{
+  display: block;
+}
+.mainContainer{
+  display: block;
+}
+.footer{
+  display: block;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.footerContactdiv{
+  margin-left: 4em;
+}
+.reservation{
+  margin-left: 30%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
